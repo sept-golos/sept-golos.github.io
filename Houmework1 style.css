@@ -1,0 +1,23 @@
+h1, h2 { color: orange;}
+
+    div#warehouse>h2 { color: blue;}
+
+p:first-letter {color: red; font-size: 300%;}
+
+em {background-color: green; color: white }
+
+
+.vegetables-list {color: red
+}
+
+div#allotment .fruits-list li {color: darkgrey}
+
+div#warehouse .fruits-list li {color: green}
+
+li {font-weight: bold}
+
+thead {font-weight: bold}
+
+tbody tr td:nth-child(1){color: orange}
+
+tbody tr td:nth-child(+n+2){background: green; color: white;}
