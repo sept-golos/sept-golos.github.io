@@ -1,0 +1,32 @@
+#red {display: none}
+#green {display: none}
+#blue {display: none}
+
+input ~ label[for="red"] {color: red; text-decoration: underline; font-weight: 600 }
+input[id="red"]:checked ~ label[for="red"] {
+    color: red; opacity: 0.5
+}
+
+input[id="red"]:checked ~ .red {display: none}
+
+input ~ label[for="green"] {color: green; text-decoration: underline; font-weight: 600;}
+input[id="green"]:checked ~ label[for="green"] {
+    color: green;  opacity: 0.5
+}
+
+input[id="green"]:checked ~ .green {display: none}
+
+input ~ label[for="blue"] {color: blue; text-decoration: underline; font-weight: 600;}
+input[id="blue"]:checked ~ label[for="blue"] {
+    color: blue;  opacity: 0.5
+}
+
+input[id="blue"]:checked ~ .blue {display: none}
+
+
+.red {background: red; color: white;}
+
+.blue {background: blue; color: white;}
+
+.green {background: green; color: white;}
+
