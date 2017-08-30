@@ -3,7 +3,10 @@ a[href^="http://ya.ru"], a[href^="https://mail.ya.ru"], a[href^="http://maps.yan
 a[href^="http://google.com"], a[href^="http://maps.google.com"], a[href^="http://news.google.com"] {color: gray}
 
 
-[href*="http://maps.yandex.ru"]:after {content: '   ⇱';  transform: rotate(90deg) }
+[href*="http://maps.yandex.ru"]:after {content: '⇱';  transform: rotate(90deg)}
+
+[href*="http://maps.yandex.ru"]:after {display: inline-block; text-decoration: none; margin-left: 4px;}
+
 
 
 
