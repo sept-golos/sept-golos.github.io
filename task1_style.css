@@ -1,0 +1,69 @@
+body {
+    overflow-x: hidden;
+}
+
+.container{
+    width: 80%;
+    height: 50px;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+div{
+    background: #a64dff;
+}
+
+.menu{
+    display: inline-block;
+    font: 20px Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.8%;
+    line-height: 2.5;
+    font-weight: 600;
+}
+
+.menu1{
+    display: inline-block;
+    font: 20px Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10%;
+    line-height: 2.5;
+}
+
+.float{
+    float: right;
+    font: 20px Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    line-height: 2.5;
+}
+
+
+
+a:hover {
+    color: #a0a2a5;
+    background: #eee;
+}
+
+
+a:before, a:after {
+    content: "";
+    position: absolute;
+    background: #a64dff;
+
+    top: 0;
+    bottom: 0;
+    width: 9999px;   /* Очень большая ширина */
+}
+a:before {
+    right: 100%;
+}
+a:after {
+    left: 100%;
+}
