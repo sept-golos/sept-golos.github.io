@@ -2,23 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Формулы</title>
-    <style>
-             p {
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 14pt; /* Размер шрифта в пунктах */
-        }
-    </style>
+    <title>Формы</title>
 </head>
 <body>
-<h3>Формулы</h3>
+<form action="/">Name <br>
+    <input type="text" name="firstname"> <br>
 
-<p>SO<sub>2</sub> + NaOH = Na<sub>2</sub>SO<sub>3</sub> + H<sub>2</sub></p>
+    Email <br>
+    <input type="text" name="Email"> <br>
+    <br>
 
-5x<sup>3</sup> - 5x (x<sup>2</sup> + 4) = 17
-<br/>
-<br>
-<a href="task4.html">На Главную</a>
+    Sex <br>
+    <input type="radio" name="sex" value="male" />Male
+    <input type="radio" name="sex" value="female" />Female <br>
+    <br>
+
+    Current status <br>
+    <input type="checkbox" name="status" value="Student" />Student <br>
+    <input type="checkbox" name="status" value="Employed" />Employed <br>
+    <input type="checkbox" name="status" value="Unemployed" />Unemployed <br>
+    <br>
+
+    Month and Year of birth <br>
+    <select name="month">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    </select>
+
+    <select name="Year">
+        <option value="1984">1984</option>
+        <option value="1985">1985</option>
+        <option value="1986">1986</option>
+    </select>
+    <br>
+    <br>
+
+    Skills and Technologies <br>
+    <select name="skills" size="10" multiple="multiple">
+        <optgroup label="Tech skills">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="git">git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="Time managment">Time managment</option>
+            <option value="Proactivity">Proactivity</option>
+            <option value="Teamwork">Teamwork</option>
+            <option value="Leadership">Leadership</option>
+        </optgroup> <br>
+    </select> <br>
+    <br>
+
+    Photo <br>
+    <input type="file" name="photo" multiple accept="image/*,image/jpeg"> <br>
+    <br>
+    Comments <br>
+    <textarea rows="6" cols="24" name="comments"></textarea>
+    <br>
+
+    <input type="submit" value="Save">
+    <input type="reset" value="Reset">
+
+</form>
+
+<p><a href="task4.html">На главную</a></p>
+
 
 </body>
 </html>
+
